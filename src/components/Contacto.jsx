@@ -1,10 +1,10 @@
-import { Fragment } from "react";
+import React from "react";
 
 const Contacto = () => {
     return (
-        <Fragment>
-
-        </Fragment>
+        <React.Fragment>
+            <h1>Contacto</h1>
+        </React.Fragment>
     )
 }
 

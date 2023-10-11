@@ -8,18 +8,26 @@ const Layout = () => {
             <header>
                 <div>
                     <nav className="navbar">
-                        <Link to={"/home"} className="nav-link">
-                            Home
-                        </Link>
-                        <Link to={"/info"} className="nav-link">
-                            Información Personal
-                        </Link>
-                        <Link to={"/creaciones"} className="nav-link">
-                            Mis Creaciones
-                        </Link>
-                        <Link to={"/favoritos"} className="nav-link">
-                            Favoritos
-                        </Link>
+                        <button>
+                            <Link to={"/"} className="nav-link">
+                                Home
+                            </Link>
+                        </button>
+                        <button>
+                            <Link to={"/info"} className="nav-link">
+                                Información Personal
+                            </Link>
+                        </button>
+                        <button>
+                            <Link to={"/creaciones"} className="nav-link">
+                                Mis Creaciones
+                            </Link>
+                        </button>
+                        <button>
+                            <Link to={"/favoritos"} className="nav-link">
+                                Favoritos
+                            </Link>
+                        </button>
                     </nav>
                 </div>
             </header>
@@ -27,7 +35,7 @@ const Layout = () => {
                 <Outlet />
             </div>
             <footer>
-                
+                <Contacto/>
             </footer>
         </React.Fragment>
     );
